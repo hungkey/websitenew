@@ -1,0 +1,240 @@
+.header
+	padding: 2px 0px
+	display: flex
+	justify-content: center
+	align-items: center
+	.menu
+		+media-breakpoint-down('sm')
+			padding: 0
+		nav
+			ul
+				list-style: none
+				margin: 0
+				padding: 0
+				li
+					display: inline-block
+					a
+						color: black
+						font-weight: bold
+						padding: 10px 30px
+						line-height: 35px
+						&:hover
+							text-decoration: none
+							background: #00c4c9
+							color: white
+.slider
+	.banner
+		.item
+			position: relative
+			figure
+				margin: 0
+				img
+					display: block
+					width: 100%
+			+media-breakpoint-up(lg)
+				figcaption
+					position: absolute
+					bottom: 0
+					left: 0
+					color: white
+					width: 100%
+					text-align: center
+					p
+						width: 50%
+						display: inline-block
+						font-size: 18px
+			+media-breakpoint-down('sm')
+				figcaption
+					padding: 10px
+		.owl-nav
+			button
+				&:hover
+					background: none !important
+			span
+				padding: .5rem 1rem
+				background: rgba(0, 0, 0, 0.87)
+				color: white
+				&:hover
+					background: #00c4c9
+			.owl-prev
+				position: absolute
+				top: 50%
+				left: 1.5%
+				transform: translateY(-100%)
+			.owl-next
+				position: absolute
+				top: 50%
+				right: 1.5%
+				transform: translateY(-100%)
+.tintuc
+	margin: 3rem 0
+	figure
+		img
+			filter: grayscale(100%)
+			width: 100%
+			+media-breakpoint-up(lg)
+				max-width: 100%
+	.box
+		p
+			color: rgba(0, 0, 0, 0.6)
+			font-weight: 500
+.dinhhuong
+	margin-top: 3rem
+	background: url(../img/dinhhuong-bg.png) no-repeat center center
+	background-size: cover
+	padding: 70px
+	.content
+		margin-top: 20px
+		.icon
+			margin-bottom: 15px
+		+media-breakpoint-down('sm')
+			text-align: center
+.noted
+	background: url(../img/noted.png) no-repeat center center
+	background-size: cover
+	.text
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 50px
+		text-align: center
+		p
+			font-size: 18px
+			color: white
+		input[type=button]
+			background: #00c4c9
+			border: none
+			color: white
+			padding: .5rem 3rem
+			border-radius: 20px
+			font-weight: bold
+			margin: 25px 0 0 0 
+
+.dinhhuongtwo
+	margin: 3rem 0
+	.tab
+		.tabchon
+			text-align: center
+			margin-bottom: 15px
+			a
+				padding: 5px 15px
+				margin: 2px !important
+				color: black
+				&:hover
+					text-decoration: none
+				&.showaz
+					background: #00c4c9
+					border: none
+					color: white
+					border-radius: 20px
+					font-weight: bold
+					margin: 25px 0 0 0
+		#tab0
+			margin-bottom: 20px
+			img
+				filter: grayscale(100%)
+				width: 100%
+				margin: 15px 0
+				+media-breakpoint-up(lg)
+					max-width: 100%
+.khachhang
+	margin-top: 3rem
+	background: url(../img/kh.png) no-repeat center center
+	background-size: cover
+	padding: 70px
+	.avatar
+		width: 15%
+		margin: 0 auto
+		img
+			border: 3px solid #00c4c9
+			border-radius: 50%
+	p.content
+		font-size: 15px
+		font-style: italic
+	p.name
+		font-size: 19px
+		color: #00c4c9
+		margin: 0
+	p.cv
+		font-size: 17px
+		margin: 0
+	.owl-dot.active
+		span
+			background: #00c4c9 !important
+.thuonghieu
+	margin: 3rem 0
+	.themeth
+		display: flex
+		justify-content: center
+		align-items: center
+		.thsilder
+			img
+				width: 65% !important
+			.owl-stage-outer
+				padding: 0 50px
+				.owl-stage
+					margin: 0 auto
+			.owl-nav
+				button
+					&:hover
+						background: none !important
+				span
+					padding: .5rem 1rem
+					background: #083e64
+					color: white
+					&:hover
+						background: #00c4c9
+				.owl-prev
+					position: absolute
+					top: 50%
+					left: -1.5%
+					transform: translateY(-100%) translateX(0%)
+				.owl-next
+					position: absolute
+					top: 50%
+					right: -1.5%
+					transform: translateY(-100%) translateX(0%)
+					+media-breakpoint-up('sm')
+						transform: translateY(-100%) translateX(100%)
+.footer
+	margin: 3rem 0 0 0
+	padding: 50px
+	background:  #00c4c9
+	ul
+		margin: 0
+		padding: 0
+		li
+			list-style: none
+			color: #5aedf1
+			&.titf
+				font-weight: bold
+				padding: 10px 0
+				text-transform: uppercase
+				font-weight: bold
+				color: black
+			&.search
+				display: flex
+				input[type=text]
+					background: #083e64
+					border: 3px solid #083e64
+					padding: 5px 10px
+				input[type=button]
+					background: #5aedf1
+					border: 3px solid #083e64
+					color: #083e64
+					padding: 5px 20px
+.end
+	background: #083e64
+	color: white
+	padding: 20px 0
+	.icon
+		i
+			display: initial
+			padding: 6px 10px
+			margin: 2px
+			border-radius: 50%
+			background: white
+			color: black
+			&:last-child
+				background: rgba(255, 255, 255, 0.6)
+

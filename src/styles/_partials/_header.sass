@@ -1,0 +1,21 @@
+header
+	.navbar
+		+pad(null 0)
+	.navbar-brand
+		position: relative
+		display: table-row
+		figure
+			margin: 0 0 1rem
+			position: absolute
+			background-color: #f8f9fa !important
+			padding: .7rem
+			z-index: 9
+			top: 0
+			border-radius: .7rem
+			img 
+				max-height: 2rem
+	+media-breakpoint-up(md)
+		.navbar-brand
+			figure
+				img 
+					max-height: 4rem

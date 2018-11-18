@@ -1,0 +1,31 @@
+// Các Mixin viết vào đây
+=gachh2($bien1,$bien2)
+	margin-bottom: 3rem
+	position: relative
+	padding: 1rem 0
+	span
+		display: inline-block
+		height: 3px
+		background: #fd7e14
+		width: 100px
+		position: absolute
+		left: $bien1
+		transform: translateX($bien2)
+		bottom: 0
+		&:before,
+		&:after
+			display: block
+			content: ''
+			position: absolute
+		&:before
+			width: 0
+			height: 0
+			border-top: 3px solid #fd7e14
+			border-left: 3px solid transparent
+			left: -3px
+		&:after
+			width: 0
+			height: 0
+			border-bottom: 3px solid #fd7e14
+			border-right: 3px solid transparent
+			right: -3px

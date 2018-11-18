@@ -1,0 +1,166 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.slider
+		.owl-carousel.owl-theme.banner
+			.item
+				figure
+					img(src="../img/slider.png", alt="", srcset="")
+				figcaption
+					h1 Lorem ipsum dolor sit amet consectetur 
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dicta hic delectus est deserunt, inventore dolor placeat accusantium temporibus maxime odit nulla officia repudiandae aperiam eligendi quas, totam optio. Quae?
+			.item
+				figure
+					img(src="../img/slider.png", alt="", srcset="")
+				figcaption
+					h1 Lorem ipsum dolor sit amet consectetur 
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dicta hic delectus est deserunt, inventore dolor placeat accusantium temporibus maxime odit nulla officia repudiandae aperiam eligendi quas, totam optio. Quae?
+			.item
+				figure
+					img(src="../img/slider.png", alt="", srcset="")
+				figcaption
+					h1 Lorem ipsum dolor sit amet consectetur 
+					p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dicta hic delectus est deserunt, inventore dolor placeat accusantium temporibus maxime odit nulla officia repudiandae aperiam eligendi quas, totam optio. Quae?
+	section.tintuc
+		.container
+			.row
+				.col-lg-12.title
+					h2.text-center.text-uppercase Tin tức
+					span
+						.icon
+			.row
+				.col-lg-4.box
+					figure
+						img(src="../img/news_1.png", alt="", srcset="")
+					h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					p.date 22/12/2018
+					p.text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt soluta minima quod
+				.col-lg-4.box
+					figure
+						img(src="../img/news_1.png", alt="", srcset="")
+					h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.date 22/12/2018
+					p.text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt soluta minima quod 
+				.col-lg-4.box
+					figure
+						img(src="../img/news_1.png", alt="", srcset="")
+					h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.date 22/12/2018
+					p.text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt soluta minima quod
+	section.dinhhuong
+		.container
+			.row
+				.col-lg-12.title
+					h2.text-center.text-uppercase định hướng phát triển
+					span
+						.icon
+			.row.content
+				.col-lg-3.col-md-6.col-12.hover
+					.icon 
+						i.fa.fa-4x.fa-copy
+					p.font-weight-bold.text-uppercase Tầm nhìn
+					p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat perferendis! Voluptatibus, consequatur molestiae, quae doloribus, nemo quisquam quo dignissimos maiores incidunt sequi et alias saepe officiis nostrum libero. Odit?
+				.col-lg-3.col-md-6.col-12.hover
+					.icon 
+						i.fa.fa-4x.fa-moon-o
+					p.font-weight-bold.text-uppercase Tầm nhìn
+					p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat perferendis! Voluptatibus, consequatur molestiae, quae doloribus, nemo quisquam quo dignissimos maiores incidunt sequi et alias saepe officiis nostrum libero. Odit?
+				.col-lg-3.col-md-6.col-12.hover
+					.icon 
+						i.fa.fa-4x.fa-object-group
+					p.font-weight-bold.text-uppercase Tầm nhìn
+					p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat perferendis! Voluptatibus, consequatur molestiae, quae doloribus, nemo quisquam quo dignissimos maiores incidunt sequi et alias saepe officiis nostrum libero. Odit?
+				.col-lg-3.col-md-6.col-12.hover
+					.icon 
+						i.fa.fa-4x.fa-save
+					p.font-weight-bold.text-uppercase Tầm nhìn
+					p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat perferendis! Voluptatibus, consequatur molestiae, quae doloribus, nemo quisquam quo dignissimos maiores incidunt sequi et alias saepe officiis nostrum libero. Odit?
+	section.noted
+		.container
+			.row.text
+				.col-sm-10.col-lg-7.mx-auto
+					p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iusto, amet temporibus nisi odit minus harum, eum ducimus explicabo reiciendis non officia quam eius aliquid quasi unde tenetur in aliquam.
+					input(type="button", value="XEM THÊM")
+	section.dinhhuongtwo
+		.container
+			.row
+				.col-lg-12.title
+					h2.text-center.text-uppercase định hướng phát triển
+					span
+						.icon
+			.tab
+				.row
+					.col.col-sm-7.mx-auto.tabchon
+						a.text-uppercase.font-weight-bold.showaz( data-tab='tab0') Tất cả
+						a.text-uppercase.font-weight-bold( data-tab='tab1') Group
+						a.text-uppercase.font-weight-bold( data-tab='tab2') tin thị trường
+						a.text-uppercase.font-weight-bold( data-tab='tab3') Tin vịt
+				.row#tab0
+					.col-6.col-lg-4.item#tab1
+							img(src="../img/news_1.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab1
+							img(src="../img/news_1.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab1
+							img(src="../img/news_1.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab2
+							img(src="../img/news_2.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab2
+							img(src="../img/news_2.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab2
+							img(src="../img/news_2.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab3
+							img(src="../img/news_3.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab3
+							img(src="../img/news_3.png", alt="", srcset="")
+					.col-6.col-lg-4.item#tab3
+							img(src="../img/news_3.png", alt="", srcset="")
+	section.khachhang
+		.container
+			.row
+				.col-lg-12.title
+					h2.text-center.text-uppercase khách hàng nói
+					span
+						.icon
+			.row
+				.owl-carousel.owl-theme.kh
+					.col-sm-7.mx-auto.text-center
+							.avatar
+								figure
+									img(src="../img/avatar.png", alt="", srcset="")
+							p.content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse dignissimos impedit magni sit corrupti delectus voluptatem sapiente doloremque, itaque culpa repellendus libero eveniet architecto consequatur, ad omnis quos minima.
+							p.name Plican Steve
+							p.cv CEO ABC company
+					.col-sm-7.mx-auto.text-center
+							.avatar
+								figure
+									img(src="../img/avatar.png", alt="", srcset="")
+							p.content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse dignissimos impedit magni sit corrupti delectus voluptatem sapiente doloremque, itaque culpa repellendus libero eveniet architecto consequatur, ad omnis quos minima.
+							p.name Plican Steve
+							p.cv CEO ABC company
+					.col-sm-7.mx-auto.text-center
+							.avatar
+								figure
+									img(src="../img/avatar.png", alt="", srcset="")
+							p.content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse dignissimos impedit magni sit corrupti delectus voluptatem sapiente doloremque, itaque culpa repellendus libero eveniet architecto consequatur, ad omnis quos minima.
+							p.name Plican Steve
+							p.cv CEO ABC company
+	section.thuonghieu
+		.container
+			.row
+				.col.mx-auto.text-center.themeth
+					.owl-carousel.owl-theme.thsilder
+						img(src="../img/th_2.png", alt="", srcset="")
+						img(src="../img/th_1.png", alt="", srcset="")
+						img(src="../img/th_3.png", alt="", srcset="")
+						img(src="../img/th_4.png", alt="", srcset="")
+						img(src="../img/th_5.png", alt="", srcset="")
+						img(src="../img/th_6.png", alt="", srcset="")
+						img(src="../img/th_1.png", alt="", srcset="")
+						img(src="../img/th_2.png", alt="", srcset="")
